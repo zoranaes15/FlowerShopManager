@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Application.Domain
 {
-    public class Notification : Entity
+    public class Report : Entity
     {
+
         public int UserId { get; private set; }
-        public string Message { get; private set; }
-        public bool IsSeen { get; private set; }
+        public string ReportName { get; private set; }
+        public string ReportContet { get; private set; }
         public DateTime CreatedAt { get; private set; }
     }
 }
