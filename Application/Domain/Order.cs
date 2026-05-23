@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace Application.Domain
 {
     public enum OrderStatus { 
-        pending,
-        processing,
-        completed,
-        cancelled
+        Pending,
+        Processing,
+        Completed,
+        Cancelled
     }
     public class Order : Entity
     {
@@ -18,6 +18,7 @@ namespace Application.Domain
         public DateTime OrderDate { get; private set; }
         public decimal TotalAmount { get; private set; }
         public OrderStatus Status { get; private set; }
+        public List<OrderItem> Items { get; private set; }
 
     }
 }
