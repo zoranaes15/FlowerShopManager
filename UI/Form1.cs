@@ -17,6 +17,18 @@ namespace UI
             InitializeComponent();
         }
 
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Registerbutton_Click(object sender, EventArgs e)
+        {
+            RegistrationForm form2 = new RegistrationForm();
+            form2.Show();
+            this.Hide();
+        }
+
        
     }
 }

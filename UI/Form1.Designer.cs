@@ -30,11 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.UsernametextBox1 = new System.Windows.Forms.TextBox();
+            this.PasswordtextBox2 = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.LoginButton = new System.Windows.Forms.Button();
+            this.Registerbutton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
@@ -59,19 +59,19 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Password :";
             // 
-            // textBox1
+            // UsernametextBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(147, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 22);
-            this.textBox1.TabIndex = 3;
+            this.UsernametextBox1.Location = new System.Drawing.Point(147, 75);
+            this.UsernametextBox1.Name = "UsernametextBox1";
+            this.UsernametextBox1.Size = new System.Drawing.Size(176, 22);
+            this.UsernametextBox1.TabIndex = 3;
             // 
-            // textBox2
+            // PasswordtextBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(147, 128);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(176, 22);
-            this.textBox2.TabIndex = 4;
+            this.PasswordtextBox2.Location = new System.Drawing.Point(147, 128);
+            this.PasswordtextBox2.Name = "PasswordtextBox2";
+            this.PasswordtextBox2.Size = new System.Drawing.Size(176, 22);
+            this.PasswordtextBox2.TabIndex = 4;
             // 
             // checkBox1
             // 
@@ -83,30 +83,33 @@
             this.checkBox1.TabIndex = 6;
             this.checkBox1.Text = "show password";
             this.checkBox1.UseVisualStyleBackColor = false;
+            
             // 
-            // button1
+            // LoginButton
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(32, 214);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 69);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
+            this.LoginButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginButton.ForeColor = System.Drawing.Color.Black;
+            this.LoginButton.Location = new System.Drawing.Point(32, 214);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(125, 69);
+            this.LoginButton.TabIndex = 7;
+            this.LoginButton.Text = "Login";
+            this.LoginButton.UseVisualStyleBackColor = false;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
-            // button2
+            // Registerbutton
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button2.Location = new System.Drawing.Point(199, 214);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 69);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Register";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Registerbutton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Registerbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Registerbutton.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.Registerbutton.Location = new System.Drawing.Point(199, 214);
+            this.Registerbutton.Name = "Registerbutton";
+            this.Registerbutton.Size = new System.Drawing.Size(124, 69);
+            this.Registerbutton.TabIndex = 9;
+            this.Registerbutton.Text = "Register";
+            this.Registerbutton.UseVisualStyleBackColor = false;
+            this.Registerbutton.Click += new System.EventHandler(this.Registerbutton_Click);
             // 
             // label3
             // 
@@ -135,12 +138,12 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Registerbutton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.LoginButton);
+            this.Controls.Add(this.UsernametextBox1);
+            this.Controls.Add(this.PasswordtextBox2);
             this.Name = "Form1";
             this.Text = "Login";
             this.ResumeLayout(false);
@@ -151,11 +154,11 @@
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox UsernametextBox1;
+        private System.Windows.Forms.TextBox PasswordtextBox2;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button LoginButton;
+        private System.Windows.Forms.Button Registerbutton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
     }
