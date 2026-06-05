@@ -14,9 +14,9 @@ namespace Application.Domain
     }
     public class Order : Entity
     {
-        public int CustomerId { get; private set; }
+        public User Customer { get; private set; }
         public DateTime OrderDate { get; private set; }
-        public decimal TotalAmount { get; private set; }
+        public double TotalAmount { get; private set; }
         public OrderStatus Status { get; private set; }
         public List<OrderItem> Items { get; private set; }
 

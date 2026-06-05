@@ -15,8 +15,8 @@ namespace Application.Domain
     }
     public class Payment : Entity
     {
-        public int OrderId { get; private set; }
-        public decimal Amount { get; private set; }
+        public Order Order { get; private set; }
+        public double Amount { get; private set; }
         public DateTime Date { get; private set; }
         public PaymentStatus Status { get; private set; }
     }

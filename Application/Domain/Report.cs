@@ -9,9 +9,9 @@ namespace Application.Domain
     public class Report : Entity
     {
 
-        public int UserId { get; private set; }
-        public string ReportName { get; private set; }
-        public string ReportContet { get; private set; }
+        public User GeneratedBy { get; private set; }
+        public string Title { get; private set; }
+        public string Content { get; private set; }
         public DateTime CreatedAt { get; private set; }
     }
 }
