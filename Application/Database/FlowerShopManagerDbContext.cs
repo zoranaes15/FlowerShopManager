@@ -1,4 +1,4 @@
-﻿using Application.Domain;
+using Application.Domain;
 using Microsoft.EntityFrameworkCore;
 
 namespace Application.Database
@@ -13,9 +13,15 @@ namespace Application.Database
         public DbSet<Report> Reports { get; set; }
         public DbSet<Notification> Notifications { get; set; }
 
+        private static string GetDbPath()
+        {
+            var assemblyDir = AppDomain.CurrentDomain.BaseDirectory;
+            return Path.Combine(assemblyDir, "Database", "FlowerShop.db");
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlite("Data Source=Database/FlowerShop.db");
+            options.UseSqlite($"Data Source={GetDbPath()}");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

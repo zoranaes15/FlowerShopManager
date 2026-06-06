@@ -60,7 +60,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(41, 103);
+            this.label2.Location = new System.Drawing.Point(41, 88);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 17);
@@ -71,7 +71,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(41, 190);
+            this.label3.Location = new System.Drawing.Point(41, 175);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 16);
@@ -82,7 +82,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(41, 142);
+            this.label4.Location = new System.Drawing.Point(41, 127);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 16);
@@ -93,7 +93,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(36, 234);
+            this.label5.Location = new System.Drawing.Point(36, 219);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(67, 16);
@@ -104,7 +104,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(31, 277);
+            this.label6.Location = new System.Drawing.Point(31, 262);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(115, 16);
@@ -115,7 +115,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(36, 319);
+            this.label7.Location = new System.Drawing.Point(36, 304);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(28, 16);
@@ -125,7 +125,7 @@
             // FirstNameTextBox
             // 
             this.FirstNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstNameTextBox.Location = new System.Drawing.Point(154, 99);
+            this.FirstNameTextBox.Location = new System.Drawing.Point(154, 84);
             this.FirstNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FirstNameTextBox.Name = "FirstNameTextBox";
             this.FirstNameTextBox.Size = new System.Drawing.Size(215, 24);
@@ -134,7 +134,7 @@
             // LastNameTextBox
             // 
             this.LastNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastNameTextBox.Location = new System.Drawing.Point(154, 142);
+            this.LastNameTextBox.Location = new System.Drawing.Point(154, 127);
             this.LastNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LastNameTextBox.Name = "LastNameTextBox";
             this.LastNameTextBox.Size = new System.Drawing.Size(215, 24);
@@ -143,7 +143,7 @@
             // EmailTextBox
             // 
             this.EmailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailTextBox.Location = new System.Drawing.Point(154, 185);
+            this.EmailTextBox.Location = new System.Drawing.Point(154, 170);
             this.EmailTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(215, 24);
@@ -152,7 +152,7 @@
             // PasswordTextBox
             // 
             this.PasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordTextBox.Location = new System.Drawing.Point(154, 229);
+            this.PasswordTextBox.Location = new System.Drawing.Point(154, 214);
             this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.Size = new System.Drawing.Size(215, 24);
@@ -161,7 +161,7 @@
             // ConfirmPasswordTextBox
             // 
             this.ConfirmPasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConfirmPasswordTextBox.Location = new System.Drawing.Point(154, 269);
+            this.ConfirmPasswordTextBox.Location = new System.Drawing.Point(154, 254);
             this.ConfirmPasswordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConfirmPasswordTextBox.Name = "ConfirmPasswordTextBox";
             this.ConfirmPasswordTextBox.Size = new System.Drawing.Size(215, 24);
@@ -172,7 +172,7 @@
             this.RegisterButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.RegisterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RegisterButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.RegisterButton.Location = new System.Drawing.Point(65, 376);
+            this.RegisterButton.Location = new System.Drawing.Point(65, 361);
             this.RegisterButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RegisterButton.Name = "RegisterButton";
             this.RegisterButton.Size = new System.Drawing.Size(141, 58);
@@ -185,7 +185,7 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(154, 309);
+            this.comboBox1.Location = new System.Drawing.Point(154, 294);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(215, 26);
@@ -194,7 +194,7 @@
             // CancelButton
             // 
             this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelButton.Location = new System.Drawing.Point(214, 376);
+            this.CancelButton.Location = new System.Drawing.Point(214, 361);
             this.CancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(141, 58);

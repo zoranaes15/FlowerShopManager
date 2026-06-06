@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Application.Repository
 {
-    public class PaymentDatabaseRepository : CrudDatabaseRepository<Payment, FlowerShopManagerDbContext>
+    public class PaymentDatabaseRepository : CrudDatabaseRepository<Payment, FlowerShopManagerDbContext>, IPaymentRepository
     {
         public PaymentDatabaseRepository(FlowerShopManagerDbContext context) : base(context) {}
     }

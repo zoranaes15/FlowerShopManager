@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.Service.Interfaces
 {
-    internal interface IReportService
+    public interface IReportService
     {
     }
 }

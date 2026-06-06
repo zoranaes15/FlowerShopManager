@@ -19,9 +19,9 @@ namespace Application.Service
             return _userRepository.GetAll().Cast<User>().ToList();
         }
 
-        public User Authenticate(string username, string password)
+        public User Authenticate(string email, string password)
         {
-            return _userRepository.GetUserByCredentials(username, password);
+            return _userRepository.GetUserByCredentials(email, password);
         }
     }
 }

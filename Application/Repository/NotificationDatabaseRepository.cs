@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Application.Repository
 {
-    public class NotificationDatabaseRepository : CrudDatabaseRepository<Notification, FlowerShopManagerDbContext>
+    public class NotificationDatabaseRepository : CrudDatabaseRepository<Notification, FlowerShopManagerDbContext>, INotificationRepository
     {
         public NotificationDatabaseRepository(FlowerShopManagerDbContext context) : base(context) {}
 
