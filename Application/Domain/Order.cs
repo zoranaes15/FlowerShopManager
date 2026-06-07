@@ -20,5 +20,27 @@ namespace Application.Domain
         public OrderStatus Status { get; private set; }
         public List<OrderItem> Items { get; private set; }
 
+        public Order() 
+        {
+            Customer = new User();
+            OrderDate = DateTime.MinValue;
+            TotalAmount = 0.0;
+            Status = OrderStatus.Pending;
+            Items = new List<OrderItem>();
+        }
+        public Order(User customer, DateTime orderDate, double totalAmount, OrderStatus status)
+        {
+            Customer = customer;
+            OrderDate = orderDate;
+            TotalAmount = totalAmount;
+            Status = status;
+            Items = new List<OrderItem>();
+        }
+
+        public void UpdateStatus(OrderStatus newStatus)
+        {
+            Status = newStatus;
+        }
+
     }
 }

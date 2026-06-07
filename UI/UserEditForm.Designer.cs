@@ -1,184 +1,114 @@
-﻿namespace UI
+namespace UI
 {
     partial class UserEditForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
+            if (disposing && (components != null)) components.Dispose();
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
             SaveButton = new Button();
             CancelButton = new Button();
-            NametextBox = new TextBox();
-            LastNametextBox = new TextBox();
-            EmailtextBox = new TextBox();
-            PasswordtextBox = new TextBox();
-            RolcomboBox = new ComboBox();
+            FirstNameTextBox = new TextBox();
+            LastNameTextBox = new TextBox();
+            EmailTextBox = new TextBox();
             SuspendLayout();
-            // 
-            // label1
-            // 
+
+            int labelX = 30;
+            int inputX = 140;
+            int inputW = 180;
+            int rowH = 40;
+            int startY = 25;
+
             label1.AutoSize = true;
-            label1.Location = new Point(33, 38);
+            label1.Font = new Font("Segoe UI", 9F);
+            label1.Location = new Point(labelX, startY + 5);
             label1.Name = "label1";
-            label1.Size = new Size(49, 20);
             label1.TabIndex = 0;
-            label1.Text = "Name";
-            // 
-            // label2
-            // 
+            label1.Text = "First Name";
+
+            FirstNameTextBox.Location = new Point(inputX, startY);
+            FirstNameTextBox.Name = "FirstNameTextBox";
+            FirstNameTextBox.Size = new Size(inputW, 24);
+            FirstNameTextBox.TabIndex = 7;
+
             label2.AutoSize = true;
-            label2.Location = new Point(33, 89);
+            label2.Font = new Font("Segoe UI", 9F);
+            label2.Location = new Point(labelX, startY + rowH + 5);
             label2.Name = "label2";
-            label2.Size = new Size(79, 20);
             label2.TabIndex = 1;
             label2.Text = "Last Name";
-            // 
-            // label3
-            // 
+
+            LastNameTextBox.Location = new Point(inputX, startY + rowH);
+            LastNameTextBox.Name = "LastNameTextBox";
+            LastNameTextBox.Size = new Size(inputW, 24);
+            LastNameTextBox.TabIndex = 8;
+
             label3.AutoSize = true;
-            label3.Location = new Point(36, 135);
+            label3.Font = new Font("Segoe UI", 9F);
+            label3.Location = new Point(labelX, startY + rowH * 2 + 5);
             label3.Name = "label3";
-            label3.Size = new Size(46, 20);
             label3.TabIndex = 2;
             label3.Text = "Email";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(33, 185);
-            label4.Name = "label4";
-            label4.Size = new Size(70, 20);
-            label4.TabIndex = 3;
-            label4.Text = "Password";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(33, 238);
-            label5.Name = "label5";
-            label5.Size = new Size(31, 20);
-            label5.TabIndex = 4;
-            label5.Text = "Rol";
-            // 
-            // SaveButton
-            // 
+
+            EmailTextBox.Location = new Point(inputX, startY + rowH * 2);
+            EmailTextBox.Name = "EmailTextBox";
+            EmailTextBox.Size = new Size(inputW, 24);
+            EmailTextBox.TabIndex = 9;
+
+            int btnY = startY + rowH * 3 + 20;
             SaveButton.BackColor = SystemColors.ActiveCaption;
-            SaveButton.Location = new Point(24, 296);
+            SaveButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            SaveButton.Location = new Point(labelX, btnY);
             SaveButton.Name = "SaveButton";
-            SaveButton.Size = new Size(126, 57);
+            SaveButton.Size = new Size(120, 32);
             SaveButton.TabIndex = 5;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = false;
-            // 
-            // CancelButton
-            // 
-            CancelButton.Location = new Point(191, 296);
+            SaveButton.Click += SaveButton_Click;
+
+            CancelButton.Font = new Font("Segoe UI", 9F);
+            CancelButton.Location = new Point(inputX, btnY);
             CancelButton.Name = "CancelButton";
-            CancelButton.Size = new Size(126, 57);
+            CancelButton.Size = new Size(120, 32);
             CancelButton.TabIndex = 6;
             CancelButton.Text = "Cancel";
             CancelButton.UseVisualStyleBackColor = true;
-            // 
-            // NametextBox
-            // 
-            NametextBox.Location = new Point(169, 45);
-            NametextBox.Name = "NametextBox";
-            NametextBox.Size = new Size(148, 27);
-            NametextBox.TabIndex = 7;
-            // 
-            // LastNametextBox
-            // 
-            LastNametextBox.Location = new Point(169, 89);
-            LastNametextBox.Name = "LastNametextBox";
-            LastNametextBox.Size = new Size(148, 27);
-            LastNametextBox.TabIndex = 8;
-            // 
-            // EmailtextBox
-            // 
-            EmailtextBox.Location = new Point(169, 135);
-            EmailtextBox.Name = "EmailtextBox";
-            EmailtextBox.Size = new Size(148, 27);
-            EmailtextBox.TabIndex = 9;
-            // 
-            // PasswordtextBox
-            // 
-            PasswordtextBox.Location = new Point(169, 185);
-            PasswordtextBox.Name = "PasswordtextBox";
-            PasswordtextBox.Size = new Size(148, 27);
-            PasswordtextBox.TabIndex = 10;
-            // 
-            // RolcomboBox
-            // 
-            RolcomboBox.FormattingEnabled = true;
-            RolcomboBox.Location = new Point(169, 238);
-            RolcomboBox.Name = "RolcomboBox";
-            RolcomboBox.Size = new Size(148, 28);
-            RolcomboBox.TabIndex = 11;
-            RolcomboBox.Text = "Rol";
-            // 
-            // UserEditForm
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            CancelButton.Click += CancelButton_Click;
+
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(349, 390);
-            Controls.Add(RolcomboBox);
-            Controls.Add(PasswordtextBox);
-            Controls.Add(EmailtextBox);
-            Controls.Add(LastNametextBox);
-            Controls.Add(NametextBox);
+            ClientSize = new Size(350, btnY + 60);
+            Controls.Add(EmailTextBox);
+            Controls.Add(LastNameTextBox);
+            Controls.Add(FirstNameTextBox);
             Controls.Add(CancelButton);
             Controls.Add(SaveButton);
-            Controls.Add(label5);
-            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "UserEditForm";
-            Text = "UserEditForm";
+            Text = "Edit User";
+            Load += UserEditForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
-        #endregion
-
         private Label label1;
         private Label label2;
         private Label label3;
-        private Label label4;
-        private Label label5;
         private Button SaveButton;
         private Button CancelButton;
-        private TextBox NametextBox;
-        private TextBox LastNametextBox;
-        private TextBox EmailtextBox;
-        private TextBox PasswordtextBox;
-        private ComboBox RolcomboBox;
+        private TextBox FirstNameTextBox;
+        private TextBox LastNameTextBox;
+        private TextBox EmailTextBox;
     }
 }

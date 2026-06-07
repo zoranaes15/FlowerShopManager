@@ -2,6 +2,7 @@
 using Application.Domain;
 using Application.Repository.Base;
 using Application.Repository.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,12 @@ namespace Application.Repository
     {
         public NotificationDatabaseRepository(FlowerShopManagerDbContext context) : base(context) {}
 
+        public List<Notification> GetAllWithReceiver()
+        {
+            return DbContext.Notifications
+                .AsNoTracking()
+                .Include(n => n.Reciever)
+                .ToList();
+        }
     }
 }

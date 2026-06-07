@@ -1,61 +1,47 @@
-﻿namespace UI
+namespace UI
 {
     partial class AdministratorForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
+            if (disposing && (components != null)) components.Dispose();
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            DashboardButton = new Button();
-            UserButton = new Button();
-            ProductsButton = new Button();
-            OrderButton = new Button();
-            PaymentButton = new Button();
-            ReportButton = new Button();
-            NotificationButton = new Button();
+            logoutButton = new Button();
             label1 = new Label();
+            NotificationButton = new Button();
+            ReportButton = new Button();
+            PaymentButton = new Button();
+            UserButton = new Button();
+            OrderButton = new Button();
+            ProductsButton = new Button();
+            DashboardButton = new Button();
             panel2 = new Panel();
-            groupBoxTotalRevenue = new GroupBox();
-            groupBoxActiveOrders = new GroupBox();
-            groupBoxLowStock = new GroupBox();
             dataGridViewOrders = new DataGridView();
-            label2 = new Label();
-            label3 = new Label();
+            groupBoxLowStock = new GroupBox();
             label4 = new Label();
+            groupBoxActiveOrders = new GroupBox();
+            label3 = new Label();
+            groupBoxTotalRevenue = new GroupBox();
+            label2 = new Label();
+            BackupButton = new Button();
+            RestoreButton = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
-            groupBoxTotalRevenue.SuspendLayout();
-            groupBoxActiveOrders.SuspendLayout();
-            groupBoxLowStock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewOrders).BeginInit();
+            groupBoxLowStock.SuspendLayout();
+            groupBoxActiveOrders.SuspendLayout();
+            groupBoxTotalRevenue.SuspendLayout();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.BackColor = SystemColors.ActiveCaption;
+
+            panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            panel1.Controls.Add(logoutButton);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(NotificationButton);
             panel1.Controls.Add(ReportButton);
@@ -64,194 +50,171 @@
             panel1.Controls.Add(OrderButton);
             panel1.Controls.Add(ProductsButton);
             panel1.Controls.Add(DashboardButton);
-            panel1.Location = new Point(-2, -1);
+            panel1.Location = new System.Drawing.Point(-2, -1);
+            panel1.Size = new System.Drawing.Size(142, 430);
             panel1.Name = "panel1";
-            panel1.Size = new Size(162, 470);
-            panel1.TabIndex = 0;
-            // 
-            // DashboardButton
-            // 
-            DashboardButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            DashboardButton.Location = new Point(14, 34);
-            DashboardButton.Name = "DashboardButton";
-            DashboardButton.Size = new Size(123, 42);
-            DashboardButton.TabIndex = 0;
-            DashboardButton.Text = "Dashboard";
-            DashboardButton.UseVisualStyleBackColor = true;
-            // 
-            // UserButton
-            // 
-            UserButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            UserButton.Location = new Point(14, 95);
-            UserButton.Name = "UserButton";
-            UserButton.Size = new Size(123, 42);
-            UserButton.TabIndex = 1;
-            UserButton.Text = "Users";
-            UserButton.UseVisualStyleBackColor = true;
-            // 
-            // ProductsButton
-            // 
-            ProductsButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            ProductsButton.Location = new Point(14, 156);
-            ProductsButton.Name = "ProductsButton";
-            ProductsButton.Size = new Size(123, 43);
-            ProductsButton.TabIndex = 2;
-            ProductsButton.Text = "Products";
-            ProductsButton.UseVisualStyleBackColor = true;
-            // 
-            // OrderButton
-            // 
-            OrderButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            OrderButton.Location = new Point(14, 218);
-            OrderButton.Name = "OrderButton";
-            OrderButton.Size = new Size(123, 42);
-            OrderButton.TabIndex = 3;
-            OrderButton.Text = "Orders";
-            OrderButton.UseVisualStyleBackColor = true;
-            OrderButton.Click += OrderButton_Click;
-            // 
-            // PaymentButton
-            // 
-            PaymentButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            PaymentButton.Location = new Point(14, 279);
-            PaymentButton.Name = "PaymentButton";
-            PaymentButton.Size = new Size(123, 42);
-            PaymentButton.TabIndex = 4;
+
+            logoutButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            logoutButton.Location = new System.Drawing.Point(12, 385);
+            logoutButton.Size = new System.Drawing.Size(108, 32);
+            logoutButton.Text = "Logout";
+            logoutButton.Name = "logoutButton";
+            logoutButton.UseVisualStyleBackColor = true;
+            logoutButton.Click += logoutButton_Click;
+
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Bold);
+            label1.Location = new System.Drawing.Point(37, 0);
+            label1.Text = "Menu";
+            label1.Name = "label1";
+
+            NotificationButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            NotificationButton.Location = new System.Drawing.Point(12, 301);
+            NotificationButton.Size = new System.Drawing.Size(108, 32);
+            NotificationButton.Text = "Notifications";
+            NotificationButton.Name = "NotificationButton";
+            NotificationButton.UseVisualStyleBackColor = true;
+            NotificationButton.Click += NotificationButton_Click;
+
+            ReportButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            ReportButton.Location = new System.Drawing.Point(12, 255);
+            ReportButton.Size = new System.Drawing.Size(108, 32);
+            ReportButton.Text = "Report";
+            ReportButton.Name = "ReportButton";
+            ReportButton.UseVisualStyleBackColor = true;
+            ReportButton.Click += ReportButton_Click;
+
+            PaymentButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            PaymentButton.Location = new System.Drawing.Point(12, 209);
+            PaymentButton.Size = new System.Drawing.Size(108, 32);
             PaymentButton.Text = "Payment";
+            PaymentButton.Name = "PaymentButton";
             PaymentButton.UseVisualStyleBackColor = true;
             PaymentButton.Click += PaymentButton_Click;
-            // 
-            // ReportButton
-            // 
-            ReportButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            ReportButton.Location = new Point(14, 340);
-            ReportButton.Name = "ReportButton";
-            ReportButton.Size = new Size(123, 42);
-            ReportButton.TabIndex = 5;
-            ReportButton.Text = "Report";
-            ReportButton.UseVisualStyleBackColor = true;
-            // 
-            // NotificationButton
-            // 
-            NotificationButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            NotificationButton.Location = new Point(14, 401);
-            NotificationButton.Name = "NotificationButton";
-            NotificationButton.Size = new Size(123, 42);
-            NotificationButton.TabIndex = 6;
-            NotificationButton.Text = "Notifications";
-            NotificationButton.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Sitka Small", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(42, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(65, 26);
-            label1.TabIndex = 7;
-            label1.Text = "Menu";
-            // 
-            // panel2
-            // 
-            panel2.BackColor = SystemColors.ControlLight;
+
+            UserButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            UserButton.Location = new System.Drawing.Point(12, 71);
+            UserButton.Size = new System.Drawing.Size(108, 32);
+            UserButton.Text = "Users";
+            UserButton.Name = "UserButton";
+            UserButton.UseVisualStyleBackColor = true;
+            UserButton.Click += UserButton_Click;
+
+            OrderButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            OrderButton.Location = new System.Drawing.Point(12, 164);
+            OrderButton.Size = new System.Drawing.Size(108, 32);
+            OrderButton.Text = "Orders";
+            OrderButton.Name = "OrderButton";
+            OrderButton.UseVisualStyleBackColor = true;
+            OrderButton.Click += OrderButton_Click;
+
+            ProductsButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            ProductsButton.Location = new System.Drawing.Point(12, 117);
+            ProductsButton.Size = new System.Drawing.Size(108, 32);
+            ProductsButton.Text = "Products";
+            ProductsButton.Name = "ProductsButton";
+            ProductsButton.UseVisualStyleBackColor = true;
+            ProductsButton.Click += ProductsButton_Click_1;
+
+            DashboardButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            DashboardButton.Location = new System.Drawing.Point(12, 26);
+            DashboardButton.Size = new System.Drawing.Size(108, 32);
+            DashboardButton.Text = "Dashboard";
+            DashboardButton.Name = "DashboardButton";
+            DashboardButton.UseVisualStyleBackColor = true;
+            DashboardButton.Click += DashboardButton_Click;
+
+            panel2.BackColor = System.Drawing.SystemColors.ControlLight;
             panel2.Controls.Add(dataGridViewOrders);
             panel2.Controls.Add(groupBoxLowStock);
             panel2.Controls.Add(groupBoxActiveOrders);
             panel2.Controls.Add(groupBoxTotalRevenue);
-            panel2.Location = new Point(175, 12);
+            panel2.Controls.Add(BackupButton);
+            panel2.Controls.Add(RestoreButton);
+            panel2.Location = new System.Drawing.Point(153, 9);
+            panel2.Size = new System.Drawing.Size(660, 420);
             panel2.Name = "panel2";
-            panel2.Size = new Size(743, 457);
-            panel2.TabIndex = 1;
-            // 
-            // groupBoxTotalRevenue
-            // 
-            groupBoxTotalRevenue.Controls.Add(label2);
-            groupBoxTotalRevenue.Location = new Point(15, 35);
-            groupBoxTotalRevenue.Name = "groupBoxTotalRevenue";
-            groupBoxTotalRevenue.Size = new Size(217, 131);
-            groupBoxTotalRevenue.TabIndex = 0;
-            groupBoxTotalRevenue.TabStop = false;
-            groupBoxTotalRevenue.Text = "groupBox1";
-            // 
-            // groupBoxActiveOrders
-            // 
-            groupBoxActiveOrders.Controls.Add(label3);
-            groupBoxActiveOrders.Location = new Point(249, 35);
-            groupBoxActiveOrders.Name = "groupBoxActiveOrders";
-            groupBoxActiveOrders.Size = new Size(229, 131);
-            groupBoxActiveOrders.TabIndex = 1;
-            groupBoxActiveOrders.TabStop = false;
-            groupBoxActiveOrders.Text = "groupBox1";
-            // 
-            // groupBoxLowStock
-            // 
-            groupBoxLowStock.Controls.Add(label4);
-            groupBoxLowStock.Location = new Point(495, 35);
-            groupBoxLowStock.Name = "groupBoxLowStock";
-            groupBoxLowStock.Size = new Size(223, 131);
-            groupBoxLowStock.TabIndex = 2;
-            groupBoxLowStock.TabStop = false;
-            groupBoxLowStock.Text = "groupBox1";
-            // 
-            // dataGridViewOrders
-            // 
+
             dataGridViewOrders.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewOrders.Location = new Point(192, 242);
+            dataGridViewOrders.Location = new System.Drawing.Point(13, 145);
+            dataGridViewOrders.Size = new System.Drawing.Size(630, 170);
             dataGridViewOrders.Name = "dataGridViewOrders";
             dataGridViewOrders.RowHeadersWidth = 51;
-            dataGridViewOrders.Size = new Size(300, 188);
-            dataGridViewOrders.TabIndex = 3;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(74, 58);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 20);
-            label2.TabIndex = 0;
-            label2.Text = "label2";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(75, 58);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 20);
-            label3.TabIndex = 0;
-            label3.Text = "label3";
-            // 
-            // label4
-            // 
+            dataGridViewOrders.ReadOnly = true;
+
+            groupBoxLowStock.Controls.Add(label4);
+            groupBoxLowStock.Location = new System.Drawing.Point(433, 10);
+            groupBoxLowStock.Size = new System.Drawing.Size(195, 98);
+            groupBoxLowStock.Text = "Low Stock Products";
+            groupBoxLowStock.Name = "groupBoxLowStock";
+
             label4.AutoSize = true;
-            label4.Location = new Point(80, 58);
+            label4.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            label4.Location = new System.Drawing.Point(70, 44);
+            label4.Text = "0";
             label4.Name = "label4";
-            label4.Size = new Size(50, 20);
-            label4.TabIndex = 0;
-            label4.Text = "label4";
-            // 
-            // AdministratorForm
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+
+            groupBoxActiveOrders.Controls.Add(label3);
+            groupBoxActiveOrders.Location = new System.Drawing.Point(218, 10);
+            groupBoxActiveOrders.Size = new System.Drawing.Size(200, 98);
+            groupBoxActiveOrders.Text = "Active Orders";
+            groupBoxActiveOrders.Name = "groupBoxActiveOrders";
+
+            label3.AutoSize = true;
+            label3.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            label3.Location = new System.Drawing.Point(66, 44);
+            label3.Text = "0";
+            label3.Name = "label3";
+
+            groupBoxTotalRevenue.Controls.Add(label2);
+            groupBoxTotalRevenue.Location = new System.Drawing.Point(13, 10);
+            groupBoxTotalRevenue.Size = new System.Drawing.Size(190, 98);
+            groupBoxTotalRevenue.Text = "Total Revenue";
+            groupBoxTotalRevenue.Name = "groupBoxTotalRevenue";
+
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            label2.Location = new System.Drawing.Point(45, 44);
+            label2.Text = "$0.00";
+            label2.Name = "label2";
+
+            BackupButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            BackupButton.Location = new System.Drawing.Point(13, 330);
+            BackupButton.Size = new System.Drawing.Size(150, 32);
+            BackupButton.Text = "Backup Database";
+            BackupButton.Name = "BackupButton";
+            BackupButton.UseVisualStyleBackColor = true;
+            BackupButton.Click += BackupButton_Click;
+
+            RestoreButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            RestoreButton.Location = new System.Drawing.Point(180, 330);
+            RestoreButton.Size = new System.Drawing.Size(150, 32);
+            RestoreButton.Text = "Restore Database";
+            RestoreButton.Name = "RestoreButton";
+            RestoreButton.UseVisualStyleBackColor = true;
+            RestoreButton.Click += RestoreButton_Click;
+
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(930, 470);
+            ClientSize = new System.Drawing.Size(824, 440);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "AdministratorForm";
-            Text = "AdministratorForm";
+            Text = "Administrator Panel";
+            Load += AdministratorForm_Load;
+
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
-            groupBoxTotalRevenue.ResumeLayout(false);
-            groupBoxTotalRevenue.PerformLayout();
-            groupBoxActiveOrders.ResumeLayout(false);
-            groupBoxActiveOrders.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewOrders).EndInit();
             groupBoxLowStock.ResumeLayout(false);
             groupBoxLowStock.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewOrders).EndInit();
+            groupBoxActiveOrders.ResumeLayout(false);
+            groupBoxActiveOrders.PerformLayout();
+            groupBoxTotalRevenue.ResumeLayout(false);
+            groupBoxTotalRevenue.PerformLayout();
             ResumeLayout(false);
         }
-
-        #endregion
 
         private Panel panel1;
         private Button DashboardButton;
@@ -270,5 +233,8 @@
         private Label label4;
         private Label label3;
         private Label label2;
+        private Button logoutButton;
+        private Button BackupButton;
+        private Button RestoreButton;
     }
 }

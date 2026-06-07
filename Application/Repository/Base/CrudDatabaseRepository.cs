@@ -18,17 +18,25 @@ namespace Application.Repository.Base
 
         public TEntity? Get(int id)
         {
-            return _dbSet.Find(id);
+            return _dbSet.AsNoTracking()
+                 .FirstOrDefault(e => e.Id == id);
         }
 
-        public List<Entity> GetAll()
+        public List<TEntity> GetAll()
         {
-            return _dbSet.ToList<Entity>();
+            return _dbSet.AsNoTracking().ToList<TEntity>();
         }
 
         public TEntity Create(TEntity entity)
         {
             _dbSet.Add(entity);
+
+
+            foreach (var entry in DbContext.ChangeTracker.Entries<Entity>().Where(e => e.Entity != entity && e.Entity.Id > 0))
+            {
+                entry.State = EntityState.Unchanged;
+            }
+
             DbContext.SaveChanges();
             return entity;
         }

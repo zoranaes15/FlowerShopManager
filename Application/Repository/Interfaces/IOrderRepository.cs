@@ -10,6 +10,7 @@ namespace Application.Repository.Interfaces
 {
      public interface IOrderRepository : ICrudRepository<Order>
     {
-
-     }
+        List<Order> GetAllWithCustomerAndItems();
+        Order? GetWithCustomerAndItems(int id);
+    }
 }

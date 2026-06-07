@@ -13,7 +13,7 @@ namespace Application.Repository
         {
             var user = DbContext.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
             if (user == null)
-                throw new Exception($"Invalid email or password");
+                throw new Exception("Invalid email or password.");
             return user;
         }
     }

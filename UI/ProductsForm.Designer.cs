@@ -1,73 +1,73 @@
-﻿namespace UI
+namespace UI
 {
     partial class ProductsForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
+            if (disposing && (components != null)) components.Dispose();
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            SearchtextBox = new TextBox();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            productsGridView = new DataGridView();
+            button1 = new Button();
+            AddButton = new Button();
+            ((System.ComponentModel.ISupportInitialize)productsGridView).BeginInit();
             SuspendLayout();
             // 
-            // SearchtextBox
+            // productsGridView
             // 
-            SearchtextBox.Location = new Point(12, 16);
-            SearchtextBox.Name = "SearchtextBox";
-            SearchtextBox.Size = new Size(264, 27);
-            SearchtextBox.TabIndex = 0;
-            SearchtextBox.Text = "Search";
+            productsGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            productsGridView.Location = new Point(14, 67);
+            productsGridView.Margin = new Padding(3, 4, 3, 4);
+            productsGridView.Name = "productsGridView";
+            productsGridView.RowHeadersWidth = 51;
+            productsGridView.Size = new Size(752, 267);
+            productsGridView.TabIndex = 1;
+            productsGridView.CellContentClick += productsGridView_CellContentClick;
             // 
-            // dataGridView1
+            // button1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 64);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(752, 188);
-            dataGridView1.TabIndex = 1;
+            button1.Location = new Point(674, 17);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(91, 35);
+            button1.TabIndex = 2;
+            button1.Text = "Back";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // AddButton
+            // 
+            AddButton.Location = new Point(571, 17);
+            AddButton.Margin = new Padding(3, 4, 3, 4);
+            AddButton.Name = "AddButton";
+            AddButton.Size = new Size(91, 35);
+            AddButton.TabIndex = 3;
+            AddButton.Text = "Add";
+            AddButton.UseVisualStyleBackColor = true;
+            AddButton.Click += AddButton_Click;
             // 
             // ProductsForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(782, 272);
-            Controls.Add(dataGridView1);
-            Controls.Add(SearchtextBox);
+            ClientSize = new Size(782, 357);
+            Controls.Add(AddButton);
+            Controls.Add(button1);
+            Controls.Add(productsGridView);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ProductsForm";
-            Text = "ProductsForm";
+            Text = "Products";
             Load += ProductsForm_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)productsGridView).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
-
-        #endregion
-
-        private TextBox SearchtextBox;
-        private DataGridView dataGridView1;
+        private DataGridView productsGridView;
+        private Button button1;
+        private Button AddButton;
     }
 }

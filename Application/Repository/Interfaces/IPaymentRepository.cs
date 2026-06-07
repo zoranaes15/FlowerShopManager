@@ -10,6 +10,6 @@ namespace Application.Repository.Interfaces
 {
     public interface IPaymentRepository : ICrudRepository<Payment>
     {
-
+        List<Payment> GetAllWithOrder();
     }
 }

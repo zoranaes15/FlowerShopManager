@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Application.Migrations
+namespace Application.Migrations 
 {
     [DbContext(typeof(FlowerShopManagerDbContext))]
     partial class FlowerShopManagerDbContextModelSnapshot : ModelSnapshot
@@ -74,6 +74,14 @@ namespace Application.Migrations
                             IsSeen = true,
                             Message = "Low stock alert: Orchid Plant has 20 units.",
                             RecieverId = 2
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CreatedAt = new DateTime(2024, 4, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsSeen = true,
+                            Message = "April sales report has been generated.",
+                            RecieverId = 1
                         });
                 });
 
@@ -125,6 +133,62 @@ namespace Application.Migrations
                             OrderDate = new DateTime(2024, 4, 10, 9, 15, 0, 0, DateTimeKind.Unspecified),
                             Status = 0,
                             TotalAmount = 12.49
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CustomerId = 5,
+                            OrderDate = new DateTime(2024, 4, 12, 11, 0, 0, 0, DateTimeKind.Unspecified),
+                            Status = 3,
+                            TotalAmount = 64.980000000000004
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CustomerId = 6,
+                            OrderDate = new DateTime(2025, 4, 15, 16, 45, 0, 0, DateTimeKind.Unspecified),
+                            Status = 1,
+                            TotalAmount = 24.989999999999998
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CustomerId = 7,
+                            OrderDate = new DateTime(2025, 4, 18, 13, 20, 0, 0, DateTimeKind.Unspecified),
+                            Status = 2,
+                            TotalAmount = 39.990000000000002
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CustomerId = 8,
+                            OrderDate = new DateTime(2025, 4, 20, 10, 10, 0, 0, DateTimeKind.Unspecified),
+                            Status = 0,
+                            TotalAmount = 22.989999999999998
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CustomerId = 9,
+                            OrderDate = new DateTime(2025, 4, 22, 15, 30, 0, 0, DateTimeKind.Unspecified),
+                            Status = 1,
+                            TotalAmount = 27.989999999999998
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CustomerId = 10,
+                            OrderDate = new DateTime(2025, 4, 25, 12, 0, 0, 0, DateTimeKind.Unspecified),
+                            Status = 3,
+                            TotalAmount = 34.990000000000002
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CustomerId = 11,
+                            OrderDate = new DateTime(2025, 4, 28, 14, 0, 0, 0, DateTimeKind.Unspecified),
+                            Status = 2,
+                            TotalAmount = 31.989999999999998
                         });
                 });
 
@@ -186,6 +250,38 @@ namespace Application.Migrations
                             ProductId = 3,
                             Quantity = 1,
                             UnitPrice = 12.49
+                        },
+                        new
+                        {
+                            Id = 5,
+                            OrderId = 4,
+                            ProductId = 5,
+                            Quantity = 1,
+                            UnitPrice = 44.990000000000002
+                        },
+                        new
+                        {
+                            Id = 6,
+                            OrderId = 4,
+                            ProductId = 6,
+                            Quantity = 1,
+                            UnitPrice = 24.989999999999998
+                        },
+                        new
+                        {
+                            Id = 7,
+                            OrderId = 5,
+                            ProductId = 6,
+                            Quantity = 1,
+                            UnitPrice = 14.99
+                        },
+                        new
+                        {
+                            Id = 8,
+                            OrderId = 6,
+                            ProductId = 8,
+                            Quantity = 1,
+                            UnitPrice = 39.990000000000002
                         });
                 });
 
@@ -236,6 +332,38 @@ namespace Application.Migrations
                             Amount = 12.49,
                             Date = new DateTime(2024, 4, 10, 9, 20, 0, 0, DateTimeKind.Unspecified),
                             OrderId = 3,
+                            Status = 0
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Amount = 64.980000000000004,
+                            Date = new DateTime(2024, 4, 12, 11, 5, 0, 0, DateTimeKind.Unspecified),
+                            OrderId = 4,
+                            Status = 2
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Amount = 24.989999999999998,
+                            Date = new DateTime(2025, 4, 15, 16, 50, 0, 0, DateTimeKind.Unspecified),
+                            OrderId = 5,
+                            Status = 0
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Amount = 39.990000000000002,
+                            Date = new DateTime(2025, 4, 18, 13, 25, 0, 0, DateTimeKind.Unspecified),
+                            OrderId = 6,
+                            Status = 1
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Amount = 22.989999999999998,
+                            Date = new DateTime(2025, 4, 20, 10, 15, 0, 0, DateTimeKind.Unspecified),
+                            OrderId = 7,
                             Status = 0
                         });
                 });
@@ -304,6 +432,62 @@ namespace Application.Migrations
                             Name = "Orchid Plant",
                             Price = 44.990000000000002,
                             Stock = 20
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Description = "Assorted succulents in a decorative pot.",
+                            Name = "Succulent Garden",
+                            Price = 24.989999999999998,
+                            Stock = 60
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Description = "Bunch of 10 colorful carnations.",
+                            Name = "Carnation Bunch",
+                            Price = 14.99,
+                            Stock = 80
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Description = "Elegant bouquet of 8 peonies.",
+                            Name = "Peony Bouquet",
+                            Price = 39.990000000000002,
+                            Stock = 25
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Description = "Basket of cheerful daisies.",
+                            Name = "Daisy Basket",
+                            Price = 22.989999999999998,
+                            Stock = 45
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Description = "Vibrant mix of 15 tulips.",
+                            Name = "Tulip Mix",
+                            Price = 27.989999999999998,
+                            Stock = 35
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Description = "Fragrant gardenia in a decorative pot.",
+                            Name = "Gardenia Plant",
+                            Price = 34.990000000000002,
+                            Stock = 15
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Description = "Beautiful bouquet of 10 irises.",
+                            Name = "Iris Bouquet",
+                            Price = 31.989999999999998,
+                            Stock = 20
                         });
                 });
 
@@ -349,6 +533,22 @@ namespace Application.Migrations
                             CreatedAt = new DateTime(2024, 4, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             GeneratedById = 2,
                             Title = "Low Stock Alert Report"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Content = "Top customers in April: Carol (2 orders), David (1 order).",
+                            CreatedAt = new DateTime(2024, 4, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            GeneratedById = 1,
+                            Title = "Customer Activity Report"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Content = "Best-selling product in April: Red Roses Bouquet (1 unit sold).",
+                            CreatedAt = new DateTime(2024, 4, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            GeneratedById = 2,
+                            Title = "Product Performance Report"
                         });
                 });
 
@@ -424,6 +624,96 @@ namespace Application.Migrations
                             LastName = "Customer",
                             Password = "hashed_pw_4",
                             Role = 2
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CreatedAt = new DateTime(2024, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "123",
+                            FirstName = "David",
+                            LastName = "Customer",
+                            Password = "123",
+                            Role = 0
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CreatedAt = new DateTime(2025, 3, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "111",
+                            FirstName = "zoki",
+                            LastName = "Customer",
+                            Password = "111",
+                            Role = 2
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CreatedAt = new DateTime(2025, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "222",
+                            FirstName = "nikola",
+                            LastName = "Customer",
+                            Password = "222",
+                            Role = 2
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CreatedAt = new DateTime(2025, 3, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "444",
+                            FirstName = "milos",
+                            LastName = "Customer",
+                            Password = "444",
+                            Role = 2
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CreatedAt = new DateTime(2025, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "333",
+                            FirstName = "marko",
+                            LastName = "Customer",
+                            Password = "333",
+                            Role = 2
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CreatedAt = new DateTime(2025, 3, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "321",
+                            FirstName = "didi",
+                            LastName = "Customer",
+                            Password = "321",
+                            Role = 2
+                        },
+                        new
+                        {
+                            Id = 11,
+                            CreatedAt = new DateTime(2025, 3, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "122",
+                            FirstName = "vule",
+                            LastName = "Customer",
+                            Password = "122",
+                            Role = 2
+                        },
+                        new
+                        {
+                            Id = 12,
+                            CreatedAt = new DateTime(2025, 3, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "124",
+                            FirstName = "miki",
+                            LastName = "Customer",
+                            Password = "124",
+                            Role = 2
+                        },
+                        new
+                        {
+                            Id = 13,
+                            CreatedAt = new DateTime(2025, 3, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "555",
+                            FirstName = "maca",
+                            LastName = "Customer",
+                            Password = "555",
+                            Role = 1
                         });
                 });
 

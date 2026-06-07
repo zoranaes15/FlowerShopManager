@@ -13,5 +13,20 @@ namespace Application.Domain
         public int Quantity { get; private set; }
         public double UnitPrice { get; private set; }
 
+        public OrderItem() 
+        {
+            Order = new Order();
+            Product = new Product();
+            Quantity = 0;
+            UnitPrice = 0.0;
+        }
+        public OrderItem(Order order, Product product, int quantity, double unitPrice)
+        {
+            Order = order;
+            Product = product;
+            Quantity = quantity;
+            UnitPrice = unitPrice;
+        }
+
     }
 }

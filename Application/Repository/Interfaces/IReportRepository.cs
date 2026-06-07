@@ -10,6 +10,6 @@ namespace Application.Repository.Interfaces
 {
     public interface IReportRepository : ICrudRepository<Report>
     {
-        
+        List<Report> GetAllWithUser();
     }
 }

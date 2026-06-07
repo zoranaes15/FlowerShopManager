@@ -1,240 +1,179 @@
-﻿namespace UI
+namespace UI
 {
     partial class RegistrationForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
+            if (disposing && (components != null)) components.Dispose();
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.FirstNameTextBox = new System.Windows.Forms.TextBox();
-            this.LastNameTextBox = new System.Windows.Forms.TextBox();
-            this.EmailTextBox = new System.Windows.Forms.TextBox();
-            this.PasswordTextBox = new System.Windows.Forms.TextBox();
-            this.ConfirmPasswordTextBox = new System.Windows.Forms.TextBox();
-            this.RegisterButton = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.CancelButton = new System.Windows.Forms.Button();
-            this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(149, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Register";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(41, 88);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "First Name";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(41, 175);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 16);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Email";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(41, 127);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 16);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Last Name";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(36, 219);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 16);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Password";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(31, 262);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 16);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Confirm Password";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(36, 304);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(28, 16);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Rol";
-            // 
-            // FirstNameTextBox
-            // 
-            this.FirstNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstNameTextBox.Location = new System.Drawing.Point(154, 84);
-            this.FirstNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.FirstNameTextBox.Name = "FirstNameTextBox";
-            this.FirstNameTextBox.Size = new System.Drawing.Size(215, 24);
-            this.FirstNameTextBox.TabIndex = 7;
-            // 
-            // LastNameTextBox
-            // 
-            this.LastNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastNameTextBox.Location = new System.Drawing.Point(154, 127);
-            this.LastNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.LastNameTextBox.Name = "LastNameTextBox";
-            this.LastNameTextBox.Size = new System.Drawing.Size(215, 24);
-            this.LastNameTextBox.TabIndex = 8;
-            // 
-            // EmailTextBox
-            // 
-            this.EmailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailTextBox.Location = new System.Drawing.Point(154, 170);
-            this.EmailTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.EmailTextBox.Name = "EmailTextBox";
-            this.EmailTextBox.Size = new System.Drawing.Size(215, 24);
-            this.EmailTextBox.TabIndex = 9;
-            // 
-            // PasswordTextBox
-            // 
-            this.PasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordTextBox.Location = new System.Drawing.Point(154, 214);
-            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.Size = new System.Drawing.Size(215, 24);
-            this.PasswordTextBox.TabIndex = 10;
-            // 
-            // ConfirmPasswordTextBox
-            // 
-            this.ConfirmPasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConfirmPasswordTextBox.Location = new System.Drawing.Point(154, 254);
-            this.ConfirmPasswordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ConfirmPasswordTextBox.Name = "ConfirmPasswordTextBox";
-            this.ConfirmPasswordTextBox.Size = new System.Drawing.Size(215, 24);
-            this.ConfirmPasswordTextBox.TabIndex = 11;
-            // 
-            // RegisterButton
-            // 
-            this.RegisterButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.RegisterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegisterButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.RegisterButton.Location = new System.Drawing.Point(65, 361);
-            this.RegisterButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.RegisterButton.Name = "RegisterButton";
-            this.RegisterButton.Size = new System.Drawing.Size(141, 58);
-            this.RegisterButton.TabIndex = 13;
-            this.RegisterButton.Text = "Register";
-            this.RegisterButton.UseVisualStyleBackColor = false;
-            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(154, 294);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(215, 26);
-            this.comboBox1.TabIndex = 14;
-            // 
-            // CancelButton
-            // 
-            this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelButton.Location = new System.Drawing.Point(214, 361);
-            this.CancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(141, 58);
-            this.CancelButton.TabIndex = 15;
-            this.CancelButton.Text = "Cancel";
-            this.CancelButton.UseVisualStyleBackColor = true;
-            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
-            // 
-            // RegistrationForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(434, 474);
-            this.Controls.Add(this.CancelButton);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.RegisterButton);
-            this.Controls.Add(this.ConfirmPasswordTextBox);
-            this.Controls.Add(this.PasswordTextBox);
-            this.Controls.Add(this.EmailTextBox);
-            this.Controls.Add(this.LastNameTextBox);
-            this.Controls.Add(this.FirstNameTextBox);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "RegistrationForm";
-            this.Text = "Registration";
-            this.Load += new System.EventHandler(this.RegistrationButton_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            FirstNameTextBox = new TextBox();
+            LastNameTextBox = new TextBox();
+            EmailTextBox = new TextBox();
+            PasswordTextBox = new TextBox();
+            ConfirmPasswordTextBox = new TextBox();
+            RegisterButton = new Button();
+            comboBox1 = new ComboBox();
+            CancelButton = new Button();
+            SuspendLayout();
 
+            int labelX = 30;
+            int inputX = 160;
+            int inputW = 210;
+            int rowH = 42;
+            int startY = 75;
+
+            // Title
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label1.Location = new Point(130, 20);
+            label1.Name = "label1";
+            label1.TabIndex = 0;
+            label1.Text = "Register";
+
+            // Row 1 - First Name
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F);
+            label2.Location = new Point(labelX, startY + 5);
+            label2.Name = "label2";
+            label2.TabIndex = 1;
+            label2.Text = "First Name";
+
+            FirstNameTextBox.Font = new Font("Segoe UI", 9F);
+            FirstNameTextBox.Location = new Point(inputX, startY);
+            FirstNameTextBox.Name = "FirstNameTextBox";
+            FirstNameTextBox.Size = new Size(inputW, 24);
+            FirstNameTextBox.TabIndex = 7;
+
+            // Row 2 - Last Name
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F);
+            label4.Location = new Point(labelX, startY + rowH + 5);
+            label4.Name = "label4";
+            label4.TabIndex = 3;
+            label4.Text = "Last Name";
+
+            LastNameTextBox.Font = new Font("Segoe UI", 9F);
+            LastNameTextBox.Location = new Point(inputX, startY + rowH);
+            LastNameTextBox.Name = "LastNameTextBox";
+            LastNameTextBox.Size = new Size(inputW, 24);
+            LastNameTextBox.TabIndex = 8;
+
+            // Row 3 - Email
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F);
+            label3.Location = new Point(labelX, startY + rowH * 2 + 5);
+            label3.Name = "label3";
+            label3.TabIndex = 2;
+            label3.Text = "Email";
+
+            EmailTextBox.Font = new Font("Segoe UI", 9F);
+            EmailTextBox.Location = new Point(inputX, startY + rowH * 2);
+            EmailTextBox.Name = "EmailTextBox";
+            EmailTextBox.Size = new Size(inputW, 24);
+            EmailTextBox.TabIndex = 9;
+
+            // Row 4 - Password
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 9F);
+            label5.Location = new Point(labelX, startY + rowH * 3 + 5);
+            label5.Name = "label5";
+            label5.TabIndex = 4;
+            label5.Text = "Password";
+
+            PasswordTextBox.Font = new Font("Segoe UI", 9F);
+            PasswordTextBox.Location = new Point(inputX, startY + rowH * 3);
+            PasswordTextBox.Name = "PasswordTextBox";
+            PasswordTextBox.Size = new Size(inputW, 24);
+            PasswordTextBox.TabIndex = 10;
+
+            // Row 5 - Confirm Password
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 9F);
+            label6.Location = new Point(labelX, startY + rowH * 4 + 5);
+            label6.Name = "label6";
+            label6.TabIndex = 5;
+            label6.Text = "Confirm Password";
+
+            ConfirmPasswordTextBox.Font = new Font("Segoe UI", 9F);
+            ConfirmPasswordTextBox.Location = new Point(inputX, startY + rowH * 4);
+            ConfirmPasswordTextBox.Name = "ConfirmPasswordTextBox";
+            ConfirmPasswordTextBox.Size = new Size(inputW, 24);
+            ConfirmPasswordTextBox.TabIndex = 11;
+
+            // Row 6 - Role
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 9F);
+            label7.Location = new Point(labelX, startY + rowH * 5 + 5);
+            label7.Name = "label7";
+            label7.TabIndex = 6;
+            label7.Text = "Role";
+
+            comboBox1.Font = new Font("Segoe UI", 9F);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(inputX, startY + rowH * 5);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(inputW, 24);
+            comboBox1.TabIndex = 14;
+
+            // Buttons
+            int btnY = startY + rowH * 6 + 15;
+            RegisterButton.BackColor = SystemColors.ActiveCaption;
+            RegisterButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            RegisterButton.ForeColor = SystemColors.ActiveCaptionText;
+            RegisterButton.Location = new Point(60, btnY);
+            RegisterButton.Name = "RegisterButton";
+            RegisterButton.Size = new Size(130, 36);
+            RegisterButton.TabIndex = 13;
+            RegisterButton.Text = "Register";
+            RegisterButton.UseVisualStyleBackColor = false;
+            RegisterButton.Click += RegisterButton_Click;
+
+            CancelButton.Font = new Font("Segoe UI", 9F);
+            CancelButton.Location = new Point(210, btnY);
+            CancelButton.Name = "CancelButton";
+            CancelButton.Size = new Size(130, 36);
+            CancelButton.TabIndex = 15;
+            CancelButton.Text = "Cancel";
+            CancelButton.UseVisualStyleBackColor = true;
+            CancelButton.Click += CancelButton_Click;
+
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.AliceBlue;
+            ClientSize = new Size(400, btnY + 65);
+            Controls.Add(CancelButton);
+            Controls.Add(comboBox1);
+            Controls.Add(RegisterButton);
+            Controls.Add(ConfirmPasswordTextBox);
+            Controls.Add(PasswordTextBox);
+            Controls.Add(EmailTextBox);
+            Controls.Add(LastNameTextBox);
+            Controls.Add(FirstNameTextBox);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Name = "RegistrationForm";
+            Text = "Registration";
+            ResumeLayout(false);
+            PerformLayout();
         }
-
-        #endregion
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

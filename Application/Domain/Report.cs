@@ -13,5 +13,21 @@ namespace Application.Domain
         public string Title { get; private set; }
         public string Content { get; private set; }
         public DateTime CreatedAt { get; private set; }
+
+        public Report() 
+        {
+            GeneratedBy = new User();
+            Title = string.Empty;
+            Content = string.Empty;
+            CreatedAt = DateTime.MinValue;
+        }
+
+        public Report(User generatedBy, string title, string content, DateTime createdAt)
+        {
+            GeneratedBy = generatedBy;
+            Title = title;
+            Content = content;
+            CreatedAt = createdAt;
+        }
     }
 }

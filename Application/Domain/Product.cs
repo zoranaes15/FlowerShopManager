@@ -12,5 +12,29 @@ namespace Application.Domain
         public string Description { get; private set; }
         public double Price { get; private set; }
         public int Stock { get; private set; }
+
+        public Product() 
+        {
+                Name = string.Empty;
+                Description = string.Empty;
+                Price = 0.0;
+                Stock = 0;
+        }
+        public Product(int id, string name, string description, int stock, double price)
+        {
+            Id = id;
+            Name = name;
+            Description = description;
+            Stock = stock;
+            Price = price;
+        }
+
+        public Product(string name, string description, int stock, double price)
+        {
+            Name = name;
+            Description = description;
+            Stock = stock;
+            Price = price;
+        }
     }
 }

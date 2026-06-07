@@ -10,6 +10,5 @@ namespace Application.Repository.Interfaces
 {
     public interface IProductRepository : ICrudRepository<Product>
     {
-
     }
 }

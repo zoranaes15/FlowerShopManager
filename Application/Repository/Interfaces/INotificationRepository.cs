@@ -10,6 +10,6 @@ namespace Application.Repository.Interfaces
 {
     public interface INotificationRepository : ICrudRepository<Notification>
     {
-
+        List<Notification> GetAllWithReceiver();
     }
 }
