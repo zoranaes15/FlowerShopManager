@@ -24,7 +24,7 @@ namespace UI
         {
             try
             {
-                int orderId = (int)orderIdNumeric.Value;
+                int orderId = (int)orderIdNumeric.Value;//numeric up -down control for order ID
                 double amount = (double)amountNumeric.Value;
                 PaymentStatus status = (PaymentStatus)statusComboBox.SelectedItem!;
 

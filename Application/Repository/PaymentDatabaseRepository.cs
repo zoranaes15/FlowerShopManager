@@ -19,7 +19,7 @@ namespace Application.Repository
         {
             return DbContext.Payments
                 .AsNoTracking()
-                .Include(p => p.Order)
+                .Include(p => p.Order)//da nema incljude ne bi se vratio samo payment bez ordera i customer-a, polje bi bilo null
                     .ThenInclude(o => o.Customer)
                 .ToList();
         }
